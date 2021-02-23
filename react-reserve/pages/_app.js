@@ -7,7 +7,7 @@ static async getInitialProps({ Component, ctx}){
 
   if (Component.getInitialProps){
     pageProps = await Component.getInitialProps(ctx)
-  };
+  }
 
   return { pageProps }
 }
@@ -16,7 +16,7 @@ static async getInitialProps({ Component, ctx}){
     const { Component, pageProps } = this.props;
     return (
       <Layout>
-        <Component {...pageProps}/>;
+        <Component {...pageProps}/>
       </Layout>
     )
   }
